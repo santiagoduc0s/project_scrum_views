@@ -26,6 +26,17 @@
             color: #fff;
             background-color: #212529;
         }
+
+        .round-table {
+            border-radius: 25px !important;
+            border-width: 5px !important;
+            border-style: solid !important;
+            border-color: rgba(0, 128, 255, 0.9) !important;
+            width: 90%;  /*Tested and working as expected: */
+            padding-top: 1%;
+            margin: 0px auto;
+            float: none;
+        }
     </style>
 </head>
 <body>
@@ -42,20 +53,20 @@
         <div class="collapse navbar-collapse px-lg-5" id="navbar">
             <ul class="navbar-nav me-auto" style="display: contents;">
                 <li class="nav-item m-0 me-3">
-                    <a class="nav-link " href="#">Home</a>
+                    <a class="nav-link " th:href="@{/home}">Home</a>
                 </li>
                 <li class="nav-item m-0 me-3">
                     <a class="nav-link" href="#">Spring</a>
-
                 </li>
                 <li class="nav-item m-0 me-3">
-                    <a class="nav-link active" href="#">Proyectos</a>
+                    <a class="nav-link active" th:href="@{/proyectos}">Proyectos</a>
                 </li>
-                <li class="nav-item dropdown d-block ms-auto">
+                <li class="nav-item dropdown d-block ms-auto me-4">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                        aria-haspopup="true" aria-expanded="false">Santiago</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Editar Perfil</a>
+                        <a class="dropdown-item" th:href="@{/administrar-usuarios}">Administar Usuarios</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Cerrar Sesion</a>
                     </div>
