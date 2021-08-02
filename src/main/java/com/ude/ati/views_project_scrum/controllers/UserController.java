@@ -12,7 +12,6 @@ public class UserController {
 //    }
     @GetMapping("/registro")
     public String register(){
-
         return "user/register";
     }
 
