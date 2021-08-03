@@ -100,18 +100,18 @@
 
     <style>
         body {
-            background-color: #292f31;
+            background-color: #eee;
         }
 
+        .btn-outline-dark {
+            border-color: #b7c2ce;
+        }
     </style>
 
 
 </head>
 
 <body>
-
-
-<!------ Include the above in your HEAD tag ---------->
 
 <div class="container">
 
@@ -121,32 +121,21 @@
         </div>
         <div class="card-body">
             <form>
-
                 <div class="form-group mb-3">
-
                     <input type="text" class="form-control" placeholder="Ingrese su nombre">
                 </div>
-
                 <div class="form-group">
-
                     <input type="text" class="form-control" placeholder="Ingrese su password">
                 </div>
-
+                <button class="btn btn-outline-dark d-block mx-auto mt-3">
+                    Ingresar
+                </button>
             </form>
         </div>
         <div class="card-footer">
             <div class="row">
                 <div class="col text-center">
-                    <button class="btn btn-dark">
-                        Ingresar
-                    </button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col text-center">
-                    <span>¿No estás registrado? <br> <a href="#">Registrate aquí</a> </span>
-
-
+                    <small><span>¿No estás registrado? <br> <a href="#">Registrate aquí</a></span></small>
                 </div>
             </div>
         </div>
@@ -466,8 +455,8 @@
             directionX: 'center', // 'center', 'left' or 'right'. 'center' = dots bounce off edges
             directionY: 'center', // 'center', 'up' or 'down'. 'center' = dots bounce off edges
             density: 10000, // How many particles will be generated: one particle every n pixels
-            dotColor: '#eee',
-            lineColor: '#eee',
+            dotColor: '#292f31',
+            lineColor: '#292f31',
             particleRadius: 7, // Dot size
             lineWidth: 1,
             curvedLines: true,
