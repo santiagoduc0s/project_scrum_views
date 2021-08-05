@@ -104,6 +104,7 @@
         }
 
         .btn-outline-dark {
+            color: #545454;
             border-color: #b7c2ce;
         }
     </style>
@@ -115,12 +116,12 @@
 
 <div class="container">
 
-    <div class="card mx-auto" style="width: 300px; margin-top: 150px">
+    <div class="card mx-auto" style="width: 300px; margin-top: 13%">
         <div class="card-header">
             Login
         </div>
         <div class="card-body">
-            <form>
+            <form th:action="@{/home}">
                 <div class="form-group mb-3">
                     <input type="text" class="form-control" placeholder="Ingrese su nombre">
                 </div>
@@ -135,7 +136,7 @@
         <div class="card-footer">
             <div class="row">
                 <div class="col text-center">
-                    <small><span>¿No estás registrado? <br> <a href="#">Registrate aquí</a></span></small>
+                    <small><span>¿No estás registrado? <br> <a th:href="@{/registro}">Registrate aquí</a></span></small>
                 </div>
             </div>
         </div>

@@ -6,13 +6,5 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class UserController {
 
-//    public String editProfile(){
-//
-//        return "modificarUsuario";
-//    }
-    @GetMapping("/registro")
-    public String register(){
-        return "user/register";
-    }
 
 }

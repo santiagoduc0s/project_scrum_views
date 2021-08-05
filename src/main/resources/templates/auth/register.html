@@ -102,6 +102,12 @@
         body {
             background-color: #292f31;
         }
+
+        .btn-dark:hover {
+            color: #545454;
+            background-color: #ffffff;
+            border-color: #b7c2ce;
+        }
     </style>
 
 
@@ -115,56 +121,62 @@
 
 <div class="container">
 
-    <div class="card mx-auto mt-5" style="width: 50%">
+    <div class="card mx-auto" style="width: 50%; margin-top: 7%">
         <div class="card-header">
             Registro
         </div>
         <div class="card-body">
-            <form>
-                <div class="row mb-2">
+            <form th:action="@{/login}">
+                <div class="row mb-3">
                     <div class="form-group col-6">
-                        <label>Nombre</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" placeholder="Ingrese su nombre">
                     </div>
+
                     <div class="form-group col-6">
-                        <label>Apellido</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" placeholder="Ingrese su apellido">
                     </div>
                 </div>
 
-                <div class="form-group mb-2">
-                    <label>Cedula</label>
-                    <input type="text" class="form-control" placeholder="">
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" placeholder="Ingrese su cedula">
                 </div>
 
-                <div class="form-group mb-2">
-                    <label>Email</label>
-                    <input type="text" class="form-control" placeholder="">
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" placeholder="Ingrese su email">
                 </div>
 
-                <div class="form-group mb-2">
-                    <label>Nombre de usuario</label>
-                    <input type="text" class="form-control" placeholder="">
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" placeholder="Ingrese su nombre de usuario">
                 </div>
 
-                <div class="row mb-2">
+                <div class="row mb-3">
                     <div class="form-group col-6">
-                        <label>Password</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" placeholder="Ingrese su contraseña">
                     </div>
+
                     <div class="form-group col-6">
-                        <label>Repeticion password</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" placeholder="Repita su contraseña">
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" placeholder="Ingrese su codigo de registro">
+                </div>
+
+                <div class="row">
+                    <div class="col text-center">
+                        <button type="submit" class="btn btn-dark">
+                            Registrar
+                        </button>
                     </div>
                 </div>
             </form>
         </div>
-        <div class="card-footer">
+
+        <div class="card-footer p-2">
             <div class="row">
                 <div class="col text-center">
-                    <button class="btn btn-dark">
-                        Registrar
-                    </button>
+                    <small><span>¿Ya estás registrado? <br> <a th:href="@{/login}">Ingresa aquí</a></span></small>
                 </div>
             </div>
         </div>
